@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact &amp; Offerte Aanvragen | Jan Pouw Schilderwerken</title>
-  <meta name="description" content="Vraag vrijblijvend een offerte aan bij Jan Pouw Schilderwerken voor binnen- en buitenschilderwerk, kleine klussen of schilderwerk aan uw woning in Spanje." />
+  <meta name="description" content="Neem rechtstreeks contact op met Jan Pouw voor een vrijblijvende prijsopgave voor binnen- en buitenschilderwerk, kleine klussen of schilderwerk in Spanje." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -22,12 +22,12 @@
         </span>
         <span class="topbar-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Uitsluitend A-merk verf (Sikkens, Sigma &amp; Wijzonol)
+          Één vast gezicht • Alleen A-merk verf (Sikkens, Sigma &amp; Wijzonol)
         </span>
       </div>
       <div>
         <a href="spanje.html" class="topbar-spain-badge">
-          ☀️ Ook beschikbaar voor schilderwerk aan de Costa Blanca &amp; Costa del Sol &rarr;
+          ☀️ Ook beschikbaar voor je woning aan de Costa Blanca &amp; Costa del Sol &rarr;
         </a>
       </div>
     </div>
@@ -55,8 +55,8 @@
       </nav>
 
       <div class="header-cta">
-        <a href="tel:+31612345678" class="btn btn-outline btn-sm">06 - 12 34 56 78</a>
-        <a href="contact.html" class="btn btn-primary btn-sm">Vrijblijvende offerte</a>
+        <a href="tel:+31612345678" class="btn btn-outline btn-sm">📞 Bel Jan: 06 - 12 34 56 78</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Nodig Jan uit</a>
       </div>
 
       <button class="mobile-toggle" aria-label="Menu openen" aria-expanded="false">
@@ -68,19 +68,25 @@
   <!-- Page Hero -->
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow" style="background: rgba(255,255,255,0.15); color: #fff;">Contact &amp; Vrijblijvende Offerte</span>
-      <h1>Bespreek uw schilder- of onderhoudsklus met Jan</h1>
-      <p>Stuur een bericht via het formulier of bel/app rechtstreeks. Ik reageer doorgaans binnen één werkdag.</p>
+      <span class="eyebrow" style="background: rgba(255,255,255,0.15); color: #fff;">Rechtstreeks contact met Jan</span>
+      <h1>Zullen we samen naar jouw klus kijken?</h1>
+      <p>Stuur mij hieronder een berichtje of bel/app rechtstreeks. Ik reageer doorgaans dezelfde dag nog.</p>
     </div>
   </section>
 
   <!-- Contact Sectie -->
   <section class="section">
     <div class="container contact-layout">
-      <!-- Linkerkolom: Contactgegevens -->
+      <!-- Linkerkolom: Contactgegevens met Jan's foto -->
       <aside class="contact-info-card">
-        <h3>Direct contact met Jan</h3>
-        <p>Staat ik op de ladder? Stuur gerust een WhatsApp-bericht of vul het formulier in, dan bel ik u zo snel mogelijk terug.</p>
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+          <img src="images/jan-portret.jpg" alt="Jan Pouw" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent);" />
+          <div>
+            <h3 style="margin-bottom: 0.15rem;">Jan Pouw</h3>
+            <span style="font-size: 0.88rem; color: rgba(255,255,255,0.75);">Jouw vaste aanspreekpunt</span>
+          </div>
+        </div>
+        <p>Sta ik net op de ladder met een kwast in mijn hand? Stuur gerust een WhatsApp-berichtje of vul het formulier in, dan bel ik je aan het eind van de middag even terug!</p>
 
         <div class="contact-list">
           <div class="contact-list-item">
@@ -127,16 +133,16 @@
 
       <!-- Rechterkolom: Offerteformulier -->
       <div class="form-card">
-        <h2 style="margin-bottom: 0.5rem;">Vrijblijvende offerte of vraag</h2>
+        <h2 style="margin-bottom: 0.5rem;">Stuur mij een bericht of vraag een offerte aan</h2>
         <p style="color: var(--text-muted); margin-bottom: 1.75rem;">
-          Vul hieronder uw gegevens en een korte omschrijving van de klus in.
+          Vul hieronder je gegevens en een korte omschrijving van de klus in, dan neem ik snel persoonlijk contact met je op.
         </p>
 
         <form id="offerte-form">
           <div class="form-grid">
             <div class="form-group">
-              <label for="naam">Uw naam *</label>
-              <input type="text" id="naam" name="naam" class="form-control" placeholder="Bijv. Jan de Vries" required />
+              <label for="naam">Je naam *</label>
+              <input type="text" id="naam" name="naam" class="form-control" placeholder="Bijv. Peter de Vries" required />
             </div>
 
             <div class="form-group">
@@ -146,7 +152,7 @@
 
             <div class="form-group">
               <label for="email">E-mailadres *</label>
-              <input type="email" id="email" name="email" class="form-control" placeholder="uw@email.nl" required />
+              <input type="email" id="email" name="email" class="form-control" placeholder="jouw@email.nl" required />
             </div>
 
             <div class="form-group">
@@ -159,7 +165,7 @@
             </div>
 
             <div class="form-group full">
-              <label for="klus-type">Waar gaat de klus over? *</label>
+              <label for="klus-type">Waar kan ik je mee helpen? *</label>
               <select id="klus-type" name="klus-type" class="form-control">
                 <option value="binnen">Binnenschilderwerk (muren, plafonds, kozijnen, deuren, trap)</option>
                 <option value="buiten">Buitenschilderwerk (kozijnen, gevel, dakkapel)</option>
@@ -170,13 +176,13 @@
             </div>
 
             <div class="form-group full">
-              <label for="bericht">Toelichting op de werkzaamheden *</label>
-              <textarea id="bericht" name="bericht" class="form-control" placeholder="Vertel kort wat u graag geschilderd of gerepareerd wilt hebben en wanneer u het ongeveer uitgevoerd zou willen zien..." required></textarea>
+              <label for="bericht">Vertel kort over je klus *</label>
+              <textarea id="bericht" name="bericht" class="form-control" placeholder="Vertel kort wat je graag geschilderd of gerepareerd wilt hebben en wanneer het ongeveer zou moeten gebeuren..." required></textarea>
             </div>
           </div>
 
           <button type="submit" class="btn btn-primary" style="width: 100%;">
-            Aanvraag versturen naar Jan Pouw
+            Bericht versturen naar Jan Pouw
           </button>
 
           <div id="form-success" class="form-success" role="status"></div>
@@ -200,7 +206,7 @@
             </div>
           </div>
           <p style="font-size: 0.92rem;">
-            Ervaren eenmansschildersbedrijf voor duurzaam binnen- en buitenschilderwerk én kleine klussen in en om het huis.
+            Persoonlijk eenmansschildersbedrijf voor duurzaam binnen- en buitenschilderwerk én kleine klussen in en om het huis.
           </p>
         </div>
 
@@ -227,7 +233,7 @@
         </div>
 
         <div class="footer-col">
-          <h4>Direct Contact</h4>
+          <h4>Direct contact met Jan</h4>
           <ul class="footer-links">
             <li>📞 <a href="tel:+31612345678">06 - 12 34 56 78</a></li>
             <li>✉️ <a href="mailto:info@janpouwschilderwerken.nl">info@janpouwschilderwerken.nl</a></li>
@@ -239,7 +245,7 @@
 
       <div class="footer-bottom">
         <span>&copy; 2026 Jan Pouw Schilderwerken. Alle rechten voorbehouden.</span>
-        <span>Vakmanschap met Sikkens • Sigma • Wijzonol</span>
+        <span>Persoonlijk vakmanschap met Sikkens • Sigma • Wijzonol</span>
       </div>
     </div>
   </footer>
