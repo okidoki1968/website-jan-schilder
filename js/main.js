@@ -76,6 +76,43 @@ const translations = {
     '.footer-bottom span:nth-child(1)': '&copy; 2026 Jan Pouw Schilderwerken. Alle Rechte vorbehalten.',
     '.footer-bottom span:nth-child(2)': 'Persönliches Handwerk mit Sikkens • Sigma • Wijzonol',
   },
+
+  es: {
+    // Algemeen: Topbar, Menu & Knoppen (Spaans)
+    '.topbar-items .topbar-item:nth-child(1)':
+      '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Región Países Bajos Centrales / Randstad y España',
+    '.topbar-items .topbar-item:nth-child(2)':
+      '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Trato personal • Solo pinturas de primera marca (Sikkens, Sigma y Wijzonol)',
+    '.topbar-spain-badge':
+      '☀️ También disponible para su vivienda en la Costa Blanca y Costa del Sol &rarr;',
+    '.brand-sub': 'Pintura y Mantenimiento del Hogar',
+    '.nav-links a[href="index.html"]': 'Inicio',
+    '.nav-links a[href="diensten.html"]': 'Servicios y Reparaciones',
+    '.nav-links a[href="spanje.html"]': '☀️ Pintura en España',
+    '.nav-links a[href="over-jan.html"]': 'Sobre Jan y Proyectos',
+    '.nav-links a[href="contact.html"]': 'Contacto',
+    '.header-cta a[href^="tel:"]': '📞 Llamar a Jan: +31 6 12 34 56 78',
+    '.header-cta a[href^="contact.html"]': 'Invitar a Jan',
+
+    // Footer
+    '.footer-grid .footer-col:nth-child(1) p:nth-of-type(1)':
+      'Empresa personal de pintura para trabajos duraderos en interiores y exteriores, además de pequeñas reparaciones en el hogar.',
+    '.footer-grid .footer-col:nth-child(2) h4': 'Páginas',
+    '.footer-grid .footer-col:nth-child(2) .footer-links li:nth-child(1) a': 'Inicio',
+    '.footer-grid .footer-col:nth-child(2) .footer-links li:nth-child(2) a': 'Servicios y Reparaciones',
+    '.footer-grid .footer-col:nth-child(2) .footer-links li:nth-child(3) a': 'Pintura en España',
+    '.footer-grid .footer-col:nth-child(2) .footer-links li:nth-child(4) a': 'Sobre Jan y Proyectos',
+    '.footer-grid .footer-col:nth-child(2) .footer-links li:nth-child(5) a': 'Contacto y Presupuesto',
+    '.footer-grid .footer-col:nth-child(3) h4': 'Servicios',
+    '.footer-grid .footer-col:nth-child(3) .footer-links li:nth-child(1) a': 'Pintura de interiores',
+    '.footer-grid .footer-col:nth-child(3) .footer-links li:nth-child(2) a': 'Pintura de exteriores',
+    '.footer-grid .footer-col:nth-child(3) .footer-links li:nth-child(3) a': 'Reparación de madera podrida',
+    '.footer-grid .footer-col:nth-child(3) .footer-links li:nth-child(4) a': 'Empapelado y paredes',
+    '.footer-grid .footer-col:nth-child(3) .footer-links li:nth-child(5) a': 'Pequeña carpintería y montaje',
+    '.footer-grid .footer-col:nth-child(4) h4': 'Contacto directo con Jan',
+    '.footer-bottom span:nth-child(1)': '&copy; 2026 Jan Pouw Schilderwerken. Todos los derechos reservados.',
+    '.footer-bottom span:nth-child(2)': 'Artesanía profesional con Sikkens • Sigma • Wijzonol',
+  },
 };
 
 // Pagina-specifieke vertalingen per bestandsnaam
@@ -223,6 +260,77 @@ const pageTranslations = {
       '.personal-cta-card .btn-primary': '☕ Jan unverbindlich einladen',
       '.personal-cta-card .btn-outline': '📞 Direkt anrufen: +31 6 12 34 56 78',
     },
+    es: {
+      '.jan-intro-pill span': 'Hola, soy <strong>Jan Pouw</strong> — tu pintor de confianza',
+      '.hero-content h1': 'Pintura impecable con <span>solo las mejores pinturas</span>, realizada personalmente por mí.',
+      '.hero-lead':
+        'Cuando me llamas, hablas directamente conmigo — y soy yo mismo quien estará trabajando en tu casa. Sin intermediarios: un profesional con experiencia que cuida cada detalle de preparación, utiliza pinturas de máxima calidad y también se encarga de pequeñas reparaciones en casa.',
+      '.hero-actions .btn-primary':
+        '☕ Solicitar presupuesto sin compromiso <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>',
+      '.hero-actions .btn-outline': 'Conoce más sobre mí',
+      '.hero-usps .hero-usp:nth-child(1) span:nth-child(2)': 'Siempre un trato directo: Jan en persona',
+      '.hero-usps .hero-usp:nth-child(2) span:nth-child(2)': 'Primeras marcas: Sikkens, Sigma y Wijzonol',
+      '.hero-usps .hero-usp:nth-child(3) span:nth-child(2)': 'También para pequeñas reparaciones del hogar',
+      '.hero-usps .hero-usp:nth-child(4) span:nth-child(2)': 'Activo en Países Bajos y España',
+      '.hero-spain-pill': '☀️ Países Bajos y España',
+      '.hero-floating-card strong': 'Oficio y trato personal',
+      '.hero-floating-card span': '"Pinto tu casa con el mismo cuidado y cariño como si fuera la mía."',
+      '.brands-label':
+        '<strong>Por qué nunca escatimo en pintura:</strong> con estas marcas líderes tu vivienda queda protegida y perfecta durante años.',
+      'section.section:nth-of-type(3) .eyebrow': 'En qué puedo ayudarte',
+      'section.section:nth-of-type(3) .section-header h2': 'Pintura Interior, Exterior y Pequeñas Reparaciones',
+      'section.section:nth-of-type(3) .section-header p':
+        'Tanto si quieres pintar toda la fachada exterior, renovar el salón o aprovechar para arreglar pequeños desperfectos en casa: me encargo de todo con limpieza y cuidado.',
+      '.services-grid .service-card:nth-child(1) .service-tag': 'Interior',
+      '.services-grid .service-card:nth-child(1) h3': 'Pintura de Interiores',
+      '.services-grid .service-card:nth-child(1) p':
+        'Un ambiente fresco y cuidado en casa. Lijo sin polvo, protejo muebles y suelos y dejo tu vivienda limpia y ordenada cada día.',
+      '.services-grid .service-card:nth-child(1) .service-card-link': 'Más sobre pintura interior &rarr;',
+      '.services-grid .service-card:nth-child(2) .service-tag': 'Exterior',
+      '.services-grid .service-card:nth-child(2) h3': 'Pintura de Exteriores',
+      '.services-grid .service-card:nth-child(2) p':
+        'Máxima protección contra el sol intenso, la lluvia y el viento. Una buena pintura exterior evita el deterioro y revaloriza tu casa.',
+      '.services-grid .service-card:nth-child(2) .service-card-link': 'Más sobre pintura exterior &rarr;',
+      '.services-grid .service-card:nth-child(3) .service-tag': 'Servicio Extra',
+      '.services-grid .service-card:nth-child(3) h3': 'Pequeñas Reparaciones y Mantenimiento',
+      '.services-grid .service-card:nth-child(3) p':
+        'Muy práctico: no necesitas buscar a otro manitas. Mientras estoy allí, realizo encantado pequeñas reparaciones, carpintería o montajes.',
+      '.services-grid .service-card:nth-child(3) .service-card-link': 'Ver todas las reparaciones &rarr;',
+      'section.section-sand:nth-of-type(4) .eyebrow': 'La ventaja de un autónomo de confianza',
+      'section.section-sand:nth-of-type(4) h2': 'Sin grandes empresas anónimas: simplemente Jan',
+      '.jan-quote-box p':
+        '"Solo me voy satisfecho a casa cuando cada rincón está perfectamente pintado y tu salón o terraza queda impecable."',
+      '.jan-signature-author div span': 'Propietario y Pintor Profesional',
+      'section.section:nth-of-type(5) .eyebrow': 'Claro y Cercano',
+      'section.section:nth-of-type(5) .section-header h2': 'Cómo trabajo: desde el primer café hasta la última pincelada',
+      'section.section:nth-of-type(5) .section-header p': 'Sin complicaciones ni letra pequeña: 4 pasos claros.',
+      '.steps-grid .step-card:nth-child(1) h3': 'Visita y Café',
+      '.steps-grid .step-card:nth-child(1) p':
+        'Te visito sin compromiso para ver juntos el trabajo de pintura (y cualquier arreglo pendiente) y darte un consejo honesto.',
+      '.steps-grid .step-card:nth-child(2) h3': 'Presupuesto Claro',
+      '.steps-grid .step-card:nth-child(2) p':
+        'Recibes un presupuesto detallado sin sorpresas posteriores, indicando las pinturas de primera marca que utilizaré.',
+      '.steps-grid .step-card:nth-child(3) h3': 'Trabajo Cuidadoso',
+      '.steps-grid .step-card:nth-child(3) p':
+        'Cubro todo con cuidado, reparo madera o grietas donde haga falta, lijo sin polvo y aplico un acabado impecable.',
+      '.steps-grid .step-card:nth-child(4) h3': 'Revisión Conjunta',
+      '.steps-grid .step-card:nth-child(4) p':
+        'Al terminar revisamos todo juntos. Solo cuando estés 100 % satisfecho con el resultado recojo mis herramientas.',
+      '.spain-banner-content .eyebrow': '☀️ También en España',
+      '.spain-banner-content h2': '¿Tienes una casa, villa o apartamento en España?',
+      '.spain-banner-content p':
+        'Además de mis trabajos en los Países Bajos, trabajo regularmente en la <strong>Costa Blanca y Costa del Sol</strong>. ¿Buscas un pintor profesional y de total confianza para tu propiedad en España? ¡Estaré encantado de ayudarte!',
+      '.spain-banner-content .btn-primary': 'Más sobre pintura en España &rarr;',
+      'section.section-sand:nth-of-type(7) .eyebrow': 'Opiniones de clientes',
+      'section.section-sand:nth-of-type(7) .section-header h2': 'Lo que dicen los clientes sobre mi trabajo',
+      'section.section-sand:nth-of-type(7) .section-header p':
+        'El mejor cumplido es un cliente satisfecho que me recomienda a sus vecinos.',
+      '.personal-cta-card h2': '¿Vemos juntos tu proyecto de pintura o mantenimiento?',
+      '.personal-cta-card p':
+        'Llámame, escríbeme por WhatsApp o rellena el formulario. Estaré encantado de visitarte sin compromiso.',
+      '.personal-cta-card .btn-primary': '☕ Invitar a Jan sin compromiso',
+      '.personal-cta-card .btn-outline': '📞 Llamar directo: +31 6 12 34 56 78',
+    },
   },
 
   'diensten.html': {
@@ -278,6 +386,32 @@ const pageTranslations = {
         'Kein Problem! Ich schaue mir das gerne unverbindlich vor Ort an und berate Sie ehrlich.',
       '.personal-cta-card .btn-primary': '☕ Jan unverbindlich einladen',
     },
+    es: {
+      '.page-hero .eyebrow': 'Servicios y Oficio',
+      '.page-hero h1': 'Interior, Exterior y Pequeñas Reparaciones en Casa',
+      '.page-hero p':
+        'Desde el lacado perfecto de marcos y puertas hasta la pintura de fachadas y pequeñas reparaciones: me encargo personalmente de todo.',
+      '#binnen .eyebrow': '01 • Interior de la vivienda',
+      '#binnen h2': 'Pintura interior cuidando cada detalle',
+      '#binnen .btn-primary': 'Pedir presupuesto de pintura interior',
+      '#buiten .eyebrow': '02 • Exterior de la vivienda',
+      '#buiten h2': 'Pintura exterior que protege durante años',
+      '#buiten .btn-primary': 'Pedir presupuesto de pintura exterior',
+      '#klussen .eyebrow': '03 • Comodidad extra con Jan',
+      '#klussen .section-header h2': 'También disponible para pequeñas reparaciones en el hogar',
+      '#klussen .section-header p':
+        'Al pintar suelen aparecer pequeños desperfectos en casa. No necesitas buscar a otra persona — lo arreglo directamente con gusto.',
+      '#klussen .services-grid .service-card:nth-child(1) h3': '🪵 Reparación de Madera',
+      '#klussen .services-grid .service-card:nth-child(2) h3': '📜 Empapelado y Renovlies',
+      '#klussen .services-grid .service-card:nth-child(3) h3': '🔨 Pequeña Carpintería',
+      '#klussen .services-grid .service-card:nth-child(4) h3': '🔧 Montaje y Mantenimiento',
+      '#klussen .services-grid .service-card:nth-child(5) h3': '💧 Sellado de Juntas',
+      '#klussen .services-grid .service-card:nth-child(6) h3': '🧽 Limpieza de Fachadas y Madera',
+      '.personal-cta-card h2': '¿Dudas sobre qué necesita exactamente tu vivienda?',
+      '.personal-cta-card p':
+        '¡Sin problema! Me acerco sin compromiso y te asesoro con total honestidad.',
+      '.personal-cta-card .btn-primary': '☕ Invitar a Jan sin compromiso',
+    },
   },
 
   'spanje.html': {
@@ -314,6 +448,23 @@ const pageTranslations = {
       '.personal-cta-card p':
         'Melden Sie sich gerne rechtzeitig bei mir, damit wir Ihr Projekt optimal einplanen können, wenn ich in der Region tätig bin.',
       '.personal-cta-card .btn-primary': '☀️ Nachricht an Jan wegen Spanien',
+    },
+    es: {
+      '.page-hero h1': 'Tu casa o villa en España pintada profesionalmente por mí',
+      '.page-hero p':
+        'Calidad artesanal holandesa bajo el sol de España. Acuerdos claros, pinturas resistentes a los rayos UV y ayuda directa con pequeñas reparaciones en tu villa o apartamento.',
+      'section.section .eyebrow': 'Calidad y Confianza',
+      'section.section h2': 'Mantenimiento sin preocupaciones para tu vivienda en España',
+      'section.section .btn-primary': 'Hablar con Jan sobre tu casa en España',
+      'section.section-sand .eyebrow': 'Trabajos en España',
+      'section.section-sand .section-header h2': '¿En qué puedo ayudarte en la Costa Blanca y Costa del Sol?',
+      'section.section-sand .services-grid .service-card:nth-child(1) h3': 'Fachadas, Muros de Terraza y Balaustradas',
+      'section.section-sand .services-grid .service-card:nth-child(2) h3': 'Interior de Villa o Apartamento',
+      'section.section-sand .services-grid .service-card:nth-child(3) h3': 'Contraventanas, Pérgolas, Rejas y Arreglos',
+      '.personal-cta-card h2': '¿Planes de pintura en la Costa Blanca o Costa del Sol?',
+      '.personal-cta-card p':
+        'Contáctame con antelación para poder organizar y planificar tu trabajo cuando esté trabajando en la zona.',
+      '.personal-cta-card .btn-primary': '☀️ Enviar mensaje a Jan sobre España',
     },
   },
 
@@ -362,6 +513,28 @@ const pageTranslations = {
       '.personal-cta-card h2': 'Sollen wir uns Ihre Maler- oder Reparaturarbeit gemeinsam ansehen?',
       '.personal-cta-card .btn-primary': '☕ Nachricht an Jan senden',
     },
+    es: {
+      '.page-hero .eyebrow': 'La persona detrás de la brocha',
+      '.page-hero h1': 'Encantado, soy Jan Pouw',
+      '.page-hero p':
+        'Un pintor con experiencia que dedica tiempo a una preparación minuciosa, trabaja solo con las mejores pinturas y cuida tu casa como si fuera la suya.',
+      'section.section .eyebrow': 'Mi historia y forma de trabajar',
+      'section.section h2': '"Una buena pintura se nota al instante, pero sobre todo se agradece 5 años después."',
+      '.jan-quote-box p':
+        '"¿Tienes alguna pregunta o quieres que eche un vistazo sin compromiso? ¡Estaré encantado de pasar a tomar un café!"',
+      '.jan-signature-author div span': 'Tu pintor de confianza',
+      'section.section-sand .eyebrow': 'Proyectos y Acabados',
+      'section.section-sand .section-header h2': 'Ejemplos de mis trabajos',
+      'section.section-sand .section-header p':
+        'Filtra a continuación por pintura interior, exterior, proyectos en España o pequeñas reparaciones.',
+      '.filter-tabs button[data-filter="all"]': 'Mostrar todo',
+      '.filter-tabs button[data-filter="binnen"]': 'Interior',
+      '.filter-tabs button[data-filter="buiten"]': 'Exterior',
+      '.filter-tabs button[data-filter="spanje"]': 'Proyectos España',
+      '.filter-tabs button[data-filter="klussen"]': 'Reparaciones',
+      '.personal-cta-card h2': '¿Vemos juntos tu trabajo de pintura o mantenimiento?',
+      '.personal-cta-card .btn-primary': '☕ Enviar un mensaje a Jan',
+    },
   },
 
   'contact.html': {
@@ -400,19 +573,38 @@ const pageTranslations = {
       'label[for="bericht"]': 'Kurze Beschreibung Ihres Projekts *',
       '#offerte-form button[type="submit"]': 'Nachricht an Jan Pouw senden',
     },
+    es: {
+      '.page-hero .eyebrow': 'Contacto directo con Jan',
+      '.page-hero h1': '¿Hablamos sobre tu proyecto?',
+      '.page-hero p':
+        'Envíame un mensaje con el formulario o llámame / escríbeme por WhatsApp directamente. Suelo responder el mismo día.',
+      '.contact-info-card > p':
+        '¿Estoy subido a la escalera con la brocha en la mano? Envíame un WhatsApp o rellena el formulario y te devolveré la llamada por la tarde.',
+      '.form-card h2': 'Envíame un mensaje o solicita presupuesto sin compromiso',
+      '.form-card > p':
+        'Rellena tus datos y una breve descripción del trabajo, y me pondré en contacto contigo personalmente muy pronto.',
+      'label[for="naam"]': 'Tu nombre *',
+      'label[for="telefoon"]': 'Teléfono *',
+      'label[for="email"]': 'Correo electrónico *',
+      'label[for="locatie"]': 'Ubicación / Región de la vivienda *',
+      'label[for="klus-type"]': '¿En qué puedo ayudarte? *',
+      'label[for="bericht"]': 'Cuéntame brevemente sobre el trabajo *',
+      '#offerte-form button[type="submit"]': 'Enviar mensaje a Jan Pouw',
+    },
   },
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Voeg taalwisselaar (NL | EN | DE) toe aan de header
+  // 1. Voeg taalwisselaar (NL | EN | DE | ES) toe aan de header
   const headerCta = document.querySelector('.header-cta');
   const langSwitcher = document.createElement('div');
   langSwitcher.className = 'lang-switcher';
-  langSwitcher.setAttribute('aria-label', 'Taal kiezen / Choose language / Sprache wählen');
+  langSwitcher.setAttribute('aria-label', 'Taal kiezen / Choose language / Sprache wählen / Elegir idioma');
   langSwitcher.innerHTML = `
     <button type="button" class="lang-btn active" data-lang="nl" title="Nederlands">🇳🇱 NL</button>
     <button type="button" class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
     <button type="button" class="lang-btn" data-lang="de" title="Deutsch">🇩🇪 DE</button>
+    <button type="button" class="lang-btn" data-lang="es" title="Español">🇪🇸 ES</button>
   `;
 
   if (headerCta) {
@@ -541,6 +733,8 @@ document.addEventListener('DOMContentLoaded', () => {
         successBox.innerHTML = `Thank you <strong>${naam}</strong>! I have received your message and will contact you personally within 24 hours. — <em>Jan Pouw</em>`;
       } else if (lang === 'de') {
         successBox.innerHTML = `Vielen Dank <strong>${naam}</strong>! Ich habe Ihre Nachricht erhalten und melde mich innerhalb von 24 Stunden persönlich bei Ihnen. — <em>Jan Pouw</em>`;
+      } else if (lang === 'es') {
+        successBox.innerHTML = `¡Muchas gracias <strong>${naam}</strong>! He recibido tu mensaje y me pondré en contacto contigo personalmente en menos de 24 horas. — <em>Jan Pouw</em>`;
       } else {
         successBox.innerHTML = `Bedankt <strong>${naam}</strong>! Ik heb je bericht goed ontvangen en neem binnen 24 uur persoonlijk contact met je op. — <em>Jan Pouw</em>`;
       }
