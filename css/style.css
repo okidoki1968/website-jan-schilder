@@ -250,15 +250,16 @@ h1, h2, h3, h4 {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.45rem;
 }
 
 .nav-link {
   font-weight: 600;
-  font-size: 0.96rem;
+  font-size: 0.93rem;
   color: var(--text-main);
   position: relative;
   padding: 0.35rem 0;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -306,7 +307,54 @@ h1, h2, h3, h4 {
 .header-cta {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 0.65rem;
+}
+
+.header-cta a[href^="tel:"] {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .header-cta a[href^="tel:"] {
+    display: inline-flex;
+  }
+}
+
+/* Taalwisselaar (NL / EN / DE) */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg-sand);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  padding: 0.2rem;
+  gap: 0.15rem;
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.76rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.lang-btn:hover {
+  color: var(--primary-dark);
+}
+
+.lang-btn.active {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(30, 58, 95, 0.2);
 }
 
 /* Knoppen */
