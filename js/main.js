@@ -611,9 +611,12 @@ document.addEventListener('DOMContentLoaded', () => {
     headerCta.insertBefore(langSwitcher, headerCta.firstChild);
   }
 
-  // Bepaal huidige pagina
-  const pathParts = window.location.pathname.split('/');
-  const currentPage = pathParts[pathParts.length - 1] || 'index.html';
+  // Bepaal huidige pagina (werkt zowel lokaal als op GitHub Pages met of zonder .html)
+  const pathParts = window.location.pathname.replace(/\/$/, '').split('/');
+  let lastPart = pathParts[pathParts.length - 1] || 'index.html';
+  if (lastPart === 'website-jan-schilder') lastPart = 'index.html';
+  if (!lastPart.endsWith('.html')) lastPart += '.html';
+  const currentPage = lastPart;
 
   // Verzamel alle selectors en sla de originele Nederlandse HTML op
   const originalNL = {};
