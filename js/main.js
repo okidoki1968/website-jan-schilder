@@ -463,6 +463,41 @@ document.addEventListener('DOMContentLoaded', () => {
     headerCta.insertBefore(langSwitcher, headerCta.firstChild);
   }
 
+  // 1b. Voeg zwevende WhatsApp-knop rechtsonder toe op alle pagina's
+  const waFloat = document.createElement('a');
+  waFloat.className = 'whatsapp-float';
+  waFloat.target = '_blank';
+  waFloat.rel = 'noopener noreferrer';
+  waFloat.href = 'https://wa.me/31612345678?text=Hoi%20Jan%2C%20ik%20heb%20een%20vraag%20over%20een%20schilder-%20of%20onderhoudsklus!';
+  waFloat.setAttribute('aria-label', 'Stuur Jan een WhatsApp-bericht');
+  waFloat.innerHTML = `
+    <span class="whatsapp-float-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.492 4.443 4.605-1.462c1.906 1.258 4.185 1.986 6.603 1.986 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+    </span>
+    <span class="whatsapp-float-text">App rechtstreeks met Jan</span>
+    <span class="whatsapp-float-dot"></span>
+  `;
+  document.body.appendChild(waFloat);
+
+  const waTexts = {
+    nl: {
+      label: 'App rechtstreeks met Jan',
+      msg: 'Hoi Jan, ik heb een vraag over een schilder- of onderhoudsklus!',
+    },
+    en: {
+      label: 'WhatsApp Jan directly',
+      msg: 'Hi Jan, I have a question about a painting or maintenance job!',
+    },
+    de: {
+      label: 'WhatsApp direkt an Jan',
+      msg: 'Hallo Jan, ich habe eine Frage zu einer Maler- oder Reparaturarbeit!',
+    },
+    es: {
+      label: 'WhatsApp directo a Jan',
+      msg: '¡Hola Jan! Tengo una consulta sobre un trabajo de pintura o mantenimiento.',
+    },
+  };
+
   // Bepaal huidige pagina (werkt zowel lokaal als op GitHub Pages)
   const pathParts = window.location.pathname.replace(/\/$/, '').split('/');
   let lastPart = pathParts[pathParts.length - 1] || 'index.html';
@@ -491,6 +526,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.lang-btn').forEach((btn) => {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
+
+    // Update zwevende WhatsApp-knop tekst & vooringevuld bericht per taal
+    const waCfg = waTexts[lang] || waTexts.nl;
+    const waTextEl = waFloat.querySelector('.whatsapp-float-text');
+    if (waTextEl) waTextEl.textContent = waCfg.label;
+    waFloat.href = `https://wa.me/31612345678?text=${encodeURIComponent(waCfg.msg)}`;
 
     allSelectors.forEach((selector) => {
       const el = document.querySelector(selector);
